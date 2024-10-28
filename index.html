@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #35424a;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenue sur mon site de test</h1>
+</header>
+
+<main>
+    <button onclick="showMessage()">Cliquez-moi !</button>
+    <div class="message" id="message"></div>
+</main>
+
+<script>
+    function showMessage() {
+        document.getElementById('message').textContent = 'Nicole est carré';
+    }
+</script>
+
+</body>
+</html>
+
